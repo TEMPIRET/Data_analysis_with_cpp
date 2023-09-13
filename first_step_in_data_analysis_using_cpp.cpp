@@ -1,8 +1,12 @@
 #include<iostream>
 using namespace std;
 
-/**********************************************************************
-******************              A program to count         *********************************              the number of 3's and 7's in a ten          **************************             digit input by the user, this is just            **************************************          for practice         **************************************************************************************************/
+/*******************************************************************************************
+******************              A program to count         *********************************              
+********                the number of 3's and 7's in a ten            **********************          
+********              digit input by the user, this is just           **********************
+**************************          for practice              ******************************
+*******************************************************************************************/
 
 int main(){
 	int inputs[10];  /*an array of inputs collected from the user*/
@@ -26,10 +30,10 @@ int main(){
 			cout<<endl; 
 		} 
 	}
-	int number_of_threes;/* a variable of the number of 3s in the users                                                       input*/
-	number_of_threes=0;/*we set it to zero in case there is no 3s in the                                                    data, that is if there is no 3s in the data, it will                                                 return 0 3s */
-	int number_of_sevens;/* a variable of the number of 7s in the  users                                                     input*/
-	number_of_sevens=0;/*we set it to zero in case there is no 7s in                                                           the data, that is if there is no 7s in the data,                                                     it will return 0 7s */
+	int number_of_threes;/* a variable of the number of 3s in the users input*/
+	number_of_threes=0;/*we set it to zero in case there is no 3s in the data, that is if there is no 3s in the data, it will return 0 3s */
+	int number_of_sevens;/* a variable of the number of 7s in the  users input*/
+	number_of_sevens=0;/*we set it to zero in case there is no 7s in the data, that is if there is no 7s in the data, it will return 0 7s */
 	int t_number_of_threes;//the total number of threes will be saved here
 	int t_number_of_sevens;//the total number of 7s will be saved here
 	for(int a=0; a<11; a++){
@@ -48,4 +52,14 @@ int main(){
 	return 0;
 }
 
-/************************************************************************                   I dont understand line 10 and 35, why are we using                   **                   11 as the array length when calling the array instead              **                    of 10, if i put ten there as the array length, the code               **                    doesnt work properly, in the caae of line 10, it doesnt             **                   ask for a value of the last input in the array, it only asks          **                   when i put the array lenth as 11, i.e 'a'                                         **                   In the case of the line 35, if i put 10 as the array length,          **                   it doesnt count the last input if it is a 3 or a 7 like it never      **                  existed                                                                                               ************************************************************************/ 
+/************************************************************************                   
+* I dont understand line 10 and 35, why are we using                    *                   
+* 11 as the array length when calling the array instead                 *
+* of 10, if i put ten there as the array length, the code               *
+* doesnt work properly, in the caae of line 10, it doesnt               *                   
+* ask for a value of the last input in the array, it only asks          *
+* when i put the array lenth as 11, i.e 'a'                             *
+* In the case of the line 35, if i put 10 as the array length,          *                  
+* it doesnt count the last input if it is a 3 or a 7 like it never      *
+* existed                                                               *
+************************************************************************/ 
